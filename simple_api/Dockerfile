@@ -7,7 +7,7 @@ RUN pip install flask flask_httpauth flask_simpleldap python-dotenv
 #COPY SOURCE CODE IN THE IMAGE
 COPY student_age.py /
 #COPY RUN TEST
-COPY run_tests.sh
+COPY run_tests.sh /
 #CREATE DATA FOLDER
 VOLUME [ "/data" ]
 #EXPOSE PORT
